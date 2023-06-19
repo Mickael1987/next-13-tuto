@@ -12,6 +12,7 @@ export default function Header() {
           <Link href='/ideas' className={styles.lnk}>
             Ideas
           </Link>
+		  <Link href="/newidea" className={styles.lnk}>New Idea</Link>
           <Link href='/register' className={styles.lnk}>
             Register
           </Link>

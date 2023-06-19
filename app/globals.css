@@ -38,6 +38,7 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+  --form-width: 80%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -110,6 +111,50 @@ a {
 
 h3 {
 	padding-bottom: 10px;
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+}
+
+.form-container h3 {
+	text-align: center;
+}
+
+.form-header {
+	width: var(--form-width);
+	margin: 40px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: var(--form-width);
+	margin-bottom: 20px;
+}
+
+.form input {
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+.form textarea {
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+.form .btn {
+	border: none;
+	padding: 10px 5px;
+	border-radius: 10px;
+	margin: 5px 0px;
+	cursor: pointer;
 }
 
 @media (prefers-color-scheme: dark) {
